@@ -55,5 +55,4 @@ subjects_activity.melted = melt(subjects_activity.tbl, id.var = c("Subject", "Ac
 subjects_activity.means = dcast(subjects_activity.melted , Subject + Activity ~ variable, mean)
 
 
-write.table(subjects_activity.means, file="activity_data.csv")
-
+write.table(subjects_activity.means, file="activity_data.txt", row.name=FALSE)

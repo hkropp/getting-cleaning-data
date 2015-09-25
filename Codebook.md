@@ -106,5 +106,5 @@ The following files are available for the train and test data. Their description
 ```
 9. Write data to CSV file.
 ```
-    write.table(subjects_activity.means, file="activity_data.csv")
+write.table(subjects_activity.means, file="activity_data.txt", row.name=FALSE)
 ```
